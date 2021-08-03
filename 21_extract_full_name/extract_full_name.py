@@ -14,3 +14,10 @@ def extract_full_names(people):
         >>> extract_full_names(names)
         ['Ada Lovelace', 'Grace Hopper']
     """
+    l = list()
+    for obj in people:
+        full_name = ''
+        for (k, v) in obj.items():
+            full_name = full_name + ' ' + v
+        l.append(full_name.strip())
+    return l

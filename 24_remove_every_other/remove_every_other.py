@@ -11,3 +11,5 @@ def remove_every_other(lst):
         >>> lst
         [1, 2, 3, 4, 5]
     """
+    new_lst = [el for el in lst if lst.index(el) % 2 == 0]
+    return new_lst
